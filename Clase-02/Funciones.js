@@ -6,5 +6,3 @@ function sumar(a, b){
 let sumar = (a,b) => a + b;
 
 let operacionCompleja = sumar;
-
-operacionCompleja = 

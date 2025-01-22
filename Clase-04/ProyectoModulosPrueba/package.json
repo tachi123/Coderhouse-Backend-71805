@@ -1,6 +1,7 @@
 {
-  "name": "clase-00",
+  "name": "proyectomodulosprueba",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -8,8 +9,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "clase-00": "file:"
+    "express": "^4.15.0",
+    "moment": "^2.30.1",
+    "mongoose": "^8.9.5",
+    "proyectomodulosprueba": "file:"
   }
 }

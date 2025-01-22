@@ -1,0 +1,26 @@
+[
+  {
+    "nombre": "Nahuel",
+    "apellido": "Ramírez",
+    "edad": 33,
+    "curso": "Programación backend"
+  },
+  {
+    "nombre": "Javier",
+    "apellido": "Rodriguez",
+    "edad": 11,
+    "curso": "Programación backend"
+  },
+  {
+    "nombre": "Nahuel",
+    "apellido": "Ramírez",
+    "edad": 33,
+    "curso": "Programación backend"
+  },
+  {
+    "nombre": "Nahuel",
+    "apellido": "Ramírez",
+    "edad": 33,
+    "curso": "Programación backend"
+  }
+]

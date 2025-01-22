@@ -1,6 +1,7 @@
 {
-  "name": "clase-00",
+  "name": "actividadpackage",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -8,8 +9,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "clase-00": "file:"
-  }
+    "actividadpackage": "file:"
+  },
+  "type": "module"
 }

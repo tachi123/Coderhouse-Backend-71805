@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registro de mascota</h1>
+    <form action="/api/pet" method="POST">
+        <label for="name">Nombre: </label>
+        <input type="text" id="name" name="name" required>
+        <label for="breed">Breed: </label>
+        <input type="text" id="breed" name="breed" required>
+        <button type="submit">Crear mascota</button>
+    </form>
+</body>
+</html>

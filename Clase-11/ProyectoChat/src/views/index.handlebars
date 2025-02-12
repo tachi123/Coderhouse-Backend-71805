@@ -1,7 +1,11 @@
 <h1>¡Bienvenido al CoderChat comunitario!</h1>
-
-
-
+<h2>¡Hola, <span id="username-display"></span>!</h2>
+<div>
+    <input id="chatBox"><!-- chatBox será la carja para poder escribir nuestro mensaje -->
+</div>
+<div>
+    <p id="messagesLogs"></p><!-- messageLogs servirá para ir colocando los mensajes que vayan llegando -->
+</div>
 
 <script src="/socket.io/socket.io.js"></script><!-- Incorporamos Socket.IO - la capacidad de establecer conexiones con socket -->
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script><!-- Agregamos las funcionalidades de sweetalert2 en nuestra página web  -->

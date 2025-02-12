@@ -28,7 +28,23 @@ app.use('/', viewsRouter);
  * Empezamos a trabajar con el servidor socket
  * Nos ponemos a escuchar conexiones
  */
+let messages = []; //Los mensajes se almacenarán aquí
 io.on('connection', socket => {
     console.log(`Nuevo cliente conectado: ${socket.id}`);
+
+    socket.on('userAuthenticated', user  => {
+        //Emitir los logs del chat al usuario que se acaba de autenticar
+        socket.emit('messageLogs', messages);
+        //Emitir una notificación a todos los demás usuarios
+        socket.broadcast.emit('newUserConnected', user);
+    })
+
+    //Recibir mensajes y enviarlos a todos los clientes
+    socket.on('message', (data) => {//Escuchamos el evento con el mismo nombre que emite el cliente: "message"
+        messages.push(data); //Guardamos el mensaje en la "base"
+        io.emit('messageLogs', messages); //Reenviamos instántaneamente los logs actualizados a TODOS los clientes
+    })
+
+
 
 })

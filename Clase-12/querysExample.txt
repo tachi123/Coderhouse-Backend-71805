@@ -1,0 +1,23 @@
+use estudiantes
+
+//Insert un estudiante, si la colección no existe, la crea (no hace falta usar db.createCollection)
+db.estudiantes.insert({ nombre: "Juan", apellido: "Pérez", curso: "Programación", correo: "juanperez@example.com" })
+db.estudiantes.insert({ nombre: "Juan", apellido: "Ramírez", curso: "Matemáticas", correo: "juanperez@example.com" })
+
+//Inserto 4 estudiantes
+db.estudiantes.insertMany([
+    { nombre: "María", apellido: "García", curso: "Diseño", correo: "mariagarcia@example.com" }, 
+    { nombre: "Pedro", apellido: "López", curso: "Matemáticas", correo: "pedrolopez@example.com" },
+    { nombre: "Ana", apellido: "Rodríguez", curso: "Historia", correo: "anarodriguez@example.com" },
+    { nombre: "Luis", apellido: "Martínez", curso: "Música", correo: "luisMartinez@example.com" } 
+    ]
+)
+
+//Retorna TODOS LOS ESTUDIANTES
+db.estudiantes.find()
+
+//Busco estudiantes del curso "Programación"
+db.estudiantes.find( { curso: "Programación" }  )
+
+//Modifico TODOS LOS DOCUMENTOS que cumple con el nombre Juan
+db.estudiantes.updateMany( { nombre: "Juan" }    ,   { $set: { curso: "Otro curso"  }  }     )

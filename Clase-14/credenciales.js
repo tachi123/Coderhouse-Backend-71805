@@ -1,0 +1,1 @@
+mongodb+srv://coderuser:<db_password>@cluster0.zdw0s.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0

@@ -1,0 +1,10 @@
+<h1>Lista de productos</h1>
+<ul>
+    {{#each products}}
+        <h2>{{this.nombre}}</h2>
+            <a href="/product/{{this.cod}}">Ver detalle</a>
+            <form action="/product/{{this._id}}?_method=DELETE" method="POST">
+                <button class="button-error">Eliminar</button>
+            </form>            
+    {{/each}}
+</ul>

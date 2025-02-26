@@ -9,4 +9,8 @@ router.get('/', (req,res) => {
     res.render('index');
 })
 
+router.get('/crearProducto', (req,res) => {
+    res.render('newProduct');
+})
+
 export default router;

@@ -5,7 +5,7 @@ import __dirname from './utils.js';
 const storage = multer.diskStorage({
     //destination hará referencia a la carpeta donde se va a guardar el archivo
     destination: function(req, file,cb){
-        const relativePath = 'public/img'
+        const relativePath = '/public/img'
         cb(null, relativePath) //Especificamos la carpeta en este punto
     },
     //filename hará referencia al nombre final que contendrá el archivo

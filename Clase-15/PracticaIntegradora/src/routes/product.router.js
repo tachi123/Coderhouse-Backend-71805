@@ -14,7 +14,7 @@ router.post('/', uploader.single('file') ,async (req,res) =>{
         console.log('Info del body: ', req.body);
         if(req.file){
             console.log(req.file); //Revisar que campos vienen por parte de multer
-            newProduct.thumbnail = req.file.path; //Agrego al usuario la ruta de su respectiva imagen
+            newProduct.thumbnail = req.file.filename; //Agrego al usuario la ruta de su respectiva imagen
         }        
         await newProduct.save();
         res.render('product', { product: newProduct.toObject()});

@@ -20,7 +20,7 @@ app.engine('handlebars', handlebars.engine());
 app.set('views', __dirname + '/views');
 app.set('view engine', 'handlebars');
 
-//Seteo de manera estática la carpeta public
+//Seteo de manera estática la carpeta public 
 app.use(express.static(__dirname + '/public'));
 
 //Conexión a la base de datos

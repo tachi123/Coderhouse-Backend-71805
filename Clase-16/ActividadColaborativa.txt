@@ -1,0 +1,25 @@
+Posibles índices:
+
+Caso 1: Estudiante
+    - email
+    - grade: realizar consultas sobre las calificaciones
+    - last_name
+
+Caso 2: Ticket de compra
+    - buyer_id
+    - total_ammount: para buscar por rango sobre el monto total de compras
+    - products (multikey): buscar los tickets que compraron tal producto
+    - destination_postal_code: es común buscar por CP, para poder repartir entre los deliverys
+
+Caso 3: Usuarios de entregas
+
+    - email
+    - telephone
+    - destination_postal_code
+
+Caso 4: Libro
+    - title
+    - author
+    - prize
+    - rating: es común buscar libros por la calificación
+    - reviews (multikey): buscamos libros que contengan comentarios específicos
